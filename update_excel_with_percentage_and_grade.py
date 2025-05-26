@@ -14,6 +14,7 @@ no_of_students = df.shape[0]
 no_of_columns = df.shape[1]
 
 df['Total'] = df['Maths']+df['Physics']+df['Chemistry']+df['English']+df['Hindi']
+
 df['Division'] = None
 
 for i in range(0, df['Total'].shape[0]):
@@ -26,7 +27,7 @@ for i in range(0, df['Total'].shape[0]):
     else:
         df['Division'][i] = 'Needs improvement'
   
-df.to_excel("C:\\code-playground\\test_data\\score_data_2.xlsx")
+df.to_excel("C:\\code-playground\\test_data\\score_data_2.xlsx",sheet_name='Grades',index=False)
 
 
 
