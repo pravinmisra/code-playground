@@ -6,7 +6,7 @@ Created on Fri May 30 19:32:49 2025
 """
 
 import sys, time
-import sevseg  # Imports our sevseg.py program.
+import sevseg  
 
 # (!) Change this to any number of seconds:
 secondsLeft = 30
